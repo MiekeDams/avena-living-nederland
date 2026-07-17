@@ -1,0 +1,389 @@
+﻿<html lang="nl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avena Living â€” luxe short stay in Aalsmeer. Rust, wellness en comfort vlak bij Schiphol en Amsterdam.">
+    <meta name="theme-color" content="#243127">
+    <title>Avena Living | Luxe short stay in Aalsmeer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Italiana&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Avena Living home">
+        <img class="brand-logo" src="/assets/avena-logo-transparent.png" alt="Avena Living">
+        <span class="brand-location">Amsterdam Â· Aalsmeer</span>
+      </a>
+      <button class="menu-button" aria-label="Menu openen" aria-expanded="false">Menu</button>
+      <nav>
+        <a href="#verblijf" data-i18n="navStay">Het verblijf</a>
+        <a href="#omgeving" data-i18n="navArea">Omgeving</a>
+        <a href="#activiteiten" data-i18n="navActivities">Rituelen</a>
+        <a href="#shop" data-i18n="navShop">Shop</a>
+      </nav>
+      <div class="header-actions">
+        <div class="site-switch" aria-label="Avena locations"><a href="#top" class="active">Aalsmeer</a><span>/</span><a class="location-link" href="https://lombok.avenaliving.com">Lombok</a></div>
+        <div class="language-switch" aria-label="Taal kiezen">
+          <button type="button" data-lang="nl" class="active">NL</button><span>/</span><button type="button" data-lang="en">EN</button>
+        </div>
+        <button class="cart-button" type="button" aria-label="Winkelmand openen"><span data-i18n="bag">Bag</span> <b id="cart-count">0</b></button>
+        <a class="header-cta" href="#boeken" data-i18n="availability">Bekijk beschikbaarheid</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content reveal visible">
+          <p class="eyebrow" data-i18n="heroEyebrow">Boutique short stay Â· Aalsmeer</p>
+          <h1 data-i18n-html="heroTitle">Kom thuis<br>in de <em>rust.</em></h1>
+          <p class="hero-copy" data-i18n="heroCopy">Een intiem verblijf waar luxe vanzelfsprekend voelt. Ontsnap samen, land na een reis of werk in alle comfort â€” op een steenworp van Amsterdam.</p>
+          <a class="text-link" href="#verblijf"><span data-i18n="discover">Ontdek Avena Living</span> <span>â†˜</span></a>
+        </div>
+        <div class="hero-note" data-i18n-html="heroNote">2â€“7 nachten<br><span>ruimte om op te laden</span></div>
+        <div class="scroll-cue" data-i18n="scroll">Scroll om te vertragen</div>
+      </section>
+
+      <section class="booking-wrap" id="boeken">
+        <div class="booking-card reveal visible">
+          <div class="booking-intro">
+            <p class="eyebrow" data-i18n="planEyebrow">Plan je verblijf</p>
+            <h2 data-i18n-html="planTitle">Wanneer mogen we<br>je verwelkomen?</h2>
+          </div>
+          <form id="availability-form">
+            <label>
+              <span data-i18n="arrival">Aankomst</span>
+              <input id="arrival" type="date" required="" min="2026-07-17">
+            </label>
+            <label>
+              <span data-i18n="departure">Vertrek</span>
+              <input id="departure" type="date" required="">
+            </label>
+            <label>
+              <span data-i18n="guests">Gasten</span>
+              <select id="guests">
+                <option data-i18n="oneGuest">1 gast</option>
+                <option selected="" data-i18n="twoGuests">2 gasten</option>
+              </select>
+            </label>
+            <button type="submit"><span data-i18n="availability">Bekijk beschikbaarheid</span> <span>â†’</span></button>
+          </form>
+          <div class="stay-planner" aria-label="Kies snel de verblijfsduur">
+            <span data-i18n="quickPlan">Snel plannen</span>
+            <button type="button" data-nights="2" data-i18n="nights2">2 nachten</button>
+            <button type="button" data-nights="3" data-i18n="nights3">3 nachten</button>
+            <button type="button" data-nights="5" data-i18n="nights5">5 nachten</button>
+            <button type="button" data-nights="7" data-i18n="nights7">7 nachten</button>
+          </div>
+          <p class="booking-message" id="booking-message" role="status" data-i18n="nightRule">Minimaal 2, maximaal 7 nachten.</p>
+        </div>
+      </section>
+
+      <section class="welcome-packages">
+        <div class="welcome-heading reveal">
+          <p class="eyebrow" data-i18n="welcomeEyebrow">Aankomen op jouw manier</p>
+          <h2 data-i18n-html="welcomeTitle">Drie zachte<br><em>welkomsten.</em></h2>
+          <p data-i18n="welcomeIntro">Boek een welkomstpakket los bij je verblijf. Alles staat klaar wanneer je aankomt.</p>
+        </div>
+        <div class="welcome-grid">
+          <article class="welcome-card reveal"><span>01</span><h3 data-i18n="softArrivalName">Soft Arrival</h3><p data-i18n="softArrivalCopy">Lokale thee, bruisend water, een mini badzout en linnenmist.</p><div><strong>â‚¬ 49</strong><small data-i18n="perStay">per verblijf</small></div><button type="button" data-add-product="welcome-soft"><span data-i18n="bookSeparately">Boek als losse optie</span><span>+</span></button></article>
+          <article class="welcome-card featured reveal"><span>02</span><h3 data-i18n="weekendResetName">Weekend Reset</h3><p data-i18n="weekendResetCopy">Ontbijtmand, alcoholvrije bubbels, badzout en een kleine geurkaars.</p><div><strong>â‚¬ 89</strong><small data-i18n="perStay">per verblijf</small></div><button type="button" data-add-product="welcome-weekend"><span data-i18n="bookSeparately">Boek als losse optie</span><span>+</span></button></article>
+          <article class="welcome-card reveal"><span>03</span><h3 data-i18n="businessArrivalName">Business Landing</h3><p data-i18n="businessArrivalCopy">Avondsnack, ontbijt-to-go, koffie- en theeset en een stille late-aankomst voorbereiding.</p><div><strong>â‚¬ 69</strong><small data-i18n="perStay">per verblijf</small></div><button type="button" data-add-product="welcome-business"><span data-i18n="bookSeparately">Boek als losse optie</span><span>+</span></button></article>
+        </div>
+      </section>
+
+      <section class="manifesto" id="verblijf">
+        <div class="section-number">01</div>
+        <div class="manifesto-copy reveal">
+          <p class="eyebrow" data-i18n="rhythmEyebrow">Jouw eigen ritme</p>
+          <h2 data-i18n-html="rhythmTitle">Luxe die je voelt,<br><em>rust die je meeneemt.</em></h2>
+          <p data-i18n="rhythmCopy">Japanse eenvoud en Scandinavische warmte komen samen in een zacht tegenwicht voor volle dagen. Natuurlijke materialen, rustige lijnen en aandacht voor elk detail creÃ«ren een plek die meteen vertraagt.</p>
+        </div>
+        <div class="amenities reveal">
+          <article><span>01</span><h3 data-i18n="sleep">Slapen</h3><p data-i18n="sleepCopy">Een laag, royaal bed, natuurlijk linnen en complete stilte.</p></article>
+          <article><span>02</span><h3 data-i18n="slow">Vertragen</h3><p data-i18n="slowCopy">Een privÃ© spa-gevoel in een kalme, tactiele omgeving.</p></article>
+          <article><span>03</span><h3 data-i18n="stay">Verblijven</h3><p data-i18n="stayCopy">Alle vrijheid voor een short stay van 2 tot 7 nachten.</p></article>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <p data-i18n-html="quote">â€œEven nergens hoeven zijn.<br>Behalve <em>hier.</em>â€</p>
+      </section>
+
+      <section class="location" id="omgeving">
+        <div class="location-copy reveal">
+          <p class="eyebrow" data-i18n="locationEyebrow">Centraal &amp; toch verstild</p>
+          <h2 data-i18n-html="locationTitle">Dicht bij alles.<br><em>Ver van de drukte.</em></h2>
+          <p data-i18n="locationCopy">Van een vroege vlucht tot een avond in de stad: vanuit Aalsmeer ligt de regio binnen handbereik. Daarna wacht de rust van Avena Living.</p>
+        </div>
+        <div class="travel-times reveal">
+          <div><strong>Schiphol</strong><span data-i18n="nearby">vlakbij</span></div>
+          <div><strong>Amsterdamse Bos</strong><span data-i18n="aroundCorner">om de hoek</span></div>
+          <div><strong>Amsterdam</strong><span data-i18n="accessible">goed bereikbaar</span></div>
+          <div><strong>Aalsmeer</strong><span data-i18n="waterside">aan het water</span></div>
+        </div>
+      </section>
+
+      <section class="arrival-route" id="route">
+        <div class="route-intro reveal">
+          <p class="eyebrow" data-i18n="routeEyebrow">Van Schiphol naar Avena</p>
+          <h2 data-i18n-html="routeTitle">Van aankomsthal<br><em>naar rust.</em></h2>
+          <p data-i18n="routeIntro">Je bestemming is bereikbaar via de Hogedijk. Gebruik in navigatie het officiÃ«le adres Oosteinderweg 268B, 1432 BC Aalsmeer.</p>
+          <div class="route-address"><span data-i18n="destination">Bestemming</span><strong>Hogedijk toegang<br>Oosteinderweg 268B Â· 1432 BC Aalsmeer</strong></div>
+          <div class="route-visual route-visual-aalsmeer" role="img" aria-label="PrivÃ©chauffeur bij Avena Living Aalsmeer"></div>
+        </div>
+        <div class="route-options reveal">
+          <article>
+            <span class="route-number">01</span>
+            <div><p class="eyebrow" data-i18n="taxiLabel">Taxi of taxi-app</p><h3 data-i18n="taxiTime">Circa 20â€“30 minuten</h3></div>
+            <strong>â‚¬ 35â€“â‚¬ 65</strong>
+            <p data-i18n="taxiRoute">Volg in Schiphol Plaza de borden naar de officiÃ«le taxistandplaats. Voor Uber en Bolt volg je de borden naar het speciale App pick-up point. Vraag vooraf naar een vaste ritprijs.</p>
+            <div class="route-links"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Schiphol+Airport&amp;destination=Oosteinderweg+268B,+1432+BC+Aalsmeer&amp;travelmode=driving" target="_blank" rel="noreferrer" data-i18n="openCarRoute">Open autoroute â†—</a><a href="https://www.schiphol.nl/nl/van-naar-schiphol/taxi/" target="_blank" rel="noreferrer" data-i18n="taxiInfo">Schiphol taxi-informatie â†—</a></div>
+          </article>
+          <article>
+            <span class="route-number">02</span>
+            <div><p class="eyebrow" data-i18n="publicLabel">Openbaar vervoer</p><h3 data-i18n="publicTime">Circa 35â€“55 minuten</h3></div>
+            <strong>â‚¬ 4â€“â‚¬ 6,50 <small data-i18n="perPerson">p.p.</small></strong>
+            <p data-i18n="publicRoute">Plan vanaf station Schiphol Airport naar Aalsmeer, Machineweg. De gebruikelijke verbinding loopt via Schiphol Knooppunt Noord en bus 199; vanaf de halte is het ongeveer 6â€“10 minuten lopen.</p>
+            <div class="route-links"><a href="https://9292.nl/" target="_blank" rel="noreferrer" data-i18n="plan9292">Plan actueel met 9292 â†—</a><a href="https://www.connexxion.nl/nl/shop/kaartjes/reiskaart-90-minuten-%28aml%29" target="_blank" rel="noreferrer" data-i18n="ticketInfo">Bekijk het 90-minutenticket â†—</a></div>
+          </article>
+          <p class="route-note" data-i18n="routeNote">Reistijden en kosten zijn indicatief en afhankelijk van verkeer, overstappen en het moment van reizen. Controleer vlak voor vertrek altijd de actuele route.</p>
+        </div>
+      </section>
+
+      <section class="audiences">
+        <article class="couples reveal">
+          <p class="eyebrow" data-i18n="couplesEyebrow">Samen weg</p>
+          <h2 data-i18n="couplesTitle">Tijd voor twee.</h2>
+          <p data-i18n="couplesCopy">Een weekend zonder planning. Uitslapen, baden, uitgebreid ontbijten en eindelijk weer echt bijpraten.</p>
+          <a href="#boeken" data-i18n="planTogether">Plan jullie verblijf â†’</a>
+        </article>
+        <article class="business reveal">
+          <p class="eyebrow" data-i18n="businessEyebrow">Zakelijk verblijf</p>
+          <h2 data-i18n="businessTitle">Een zachte landing.</h2>
+          <p data-i18n="businessCopy">Rust en privacy na een werkdag of vlucht, met alle ruimte om te focussen Ã©n goed te slapen.</p>
+          <a href="#boeken" data-i18n="viewDates">Bekijk beschikbare data â†’</a>
+        </article>
+      </section>
+
+      <section class="local-experiences" id="activiteiten">
+        <div class="experiences-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="activitiesEyebrow">Things to do Â· Amsterdam &amp; Aalsmeer</p>
+            <h2 data-i18n-html="activitiesTitle">Vertraag buiten<br><em>je verblijf.</em></h2>
+          </div>
+          <div>
+            <p data-i18n="activitiesIntro">Zachte ervaringen voor lichaam en aandacht, zorgvuldig gekozen rondom Avena Living. Kies een ritueel en plan direct je voorkeursmoment.</p>
+            <span class="test-label" data-i18n="activitiesTest">Testmodule Â· definitieve bevestiging volgt later</span>
+          </div>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <span class="experience-number">01</span>
+            <div class="experience-meta"><span data-i18n="massageMeta">60 of 90 min</span><span data-i18n="onLocation">Op locatie</span></div>
+            <h3 data-i18n="massageTitle">PrivÃ©massage</h3>
+            <p data-i18n="massageCopy">Een rustgevende behandeling die spanning loslaat en je verblijf nog zachter maakt.</p>
+            <div class="experience-price"><strong>â‚¬ 95 / â‚¬ 135</strong><span data-i18n="massagePriceNote">60 / 90 min Â· privÃ©</span></div>
+            <button type="button" data-book-experience="massage"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card reveal">
+            <span class="experience-number">02</span>
+            <div class="experience-meta"><span data-i18n="mindfulnessMeta">90 min</span><span>Aalsmeer</span></div>
+            <h3 data-i18n="mindfulnessTitle">Mindfulnesstraining</h3>
+            <p data-i18n="mindfulnessCopy">Een persoonlijke training met adem, aandacht en praktische handvatten voor meer ruimte in je hoofd.</p>
+            <div class="experience-price"><strong>â‚¬ 89 / â‚¬ 129</strong><span data-i18n="privateDuoPrice">privÃ© / duo</span></div>
+            <button type="button" data-book-experience="mindfulness"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card reveal">
+            <span class="experience-number">03</span>
+            <div class="experience-meta"><s�N��G����ƭy�rience-price"><strong>â‚¬ 85 / â‚¬ 125</strong><span data-i18n="privateDuoPrice">privÃ© / duo</span></div>
+            <button type="button" data-book-experience="sound"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card reveal">
+            <span class="experience-number">04</span>
+            <div class="experience-meta"><span data-i18n="walkMeta">Circa 2 uur</span><span>Amsterdamse Bos</span></div>
+            <h3 data-i18n="walkTitle">Mindful boswandeling</h3>
+            <p data-i18n="walkCopy">Een begeleide wandeling in stilte en vertraagd tempo, met ruimte voor zintuigen en reflectie.</p>
+            <div class="experience-price"><strong>â‚¬ 45 / â‚¬ 80</strong><span data-i18n="personDuoPrice">per persoon / duo</span></div>
+            <button type="button" data-book-experience="walk"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card experience-card-photo reveal">
+            <div class="experience-visual experience-boat" role="img" aria-label="Verstilde vaartocht over het water bij Aalsmeer"></div>
+            <span class="experience-number">05</span>
+            <div class="experience-meta"><span data-i18n="boatMeta">Circa 90 min</span><span>Westeinderplassen</span></div>
+            <h3 data-i18n="boatTitle">Verstilde vaartocht</h3>
+            <p data-i18n="boatCopy">Vaar in alle rust over de Aalsmeerse wateren, met ruimte voor stilte, uitzicht en een langzaam tempo.</p>
+            <div class="experience-price"><strong>â‚¬ 165</strong><span data-i18n="privateTwoPrice">privÃ© Â· maximaal 2 gasten</span></div>
+            <button type="button" data-book-experience="boat"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card experience-card-photo reveal">
+            <div class="experience-visual experience-sup" role="img" aria-label="Yoga op een SUP-board op rustig water"></div>
+            <span class="experience-number">06</span>
+            <div class="experience-meta"><span data-i18n="supMeta">Circa 75 min</span><span>Aalsmeer</span></div>
+            <h3 data-i18n="supTitle">SUP-yoga</h3>
+            <p data-i18n="supCopy">Adem, balans en zachte beweging op het water â€” een speelse manier om volledig in het moment te komen.</p>
+            <div class="experience-price"><strong>â‚¬ 65 / â‚¬ 115</strong><span data-i18n="personDuoPrice">per persoon / duo</span></div>
+            <button type="button" data-book-experience="sup"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+          <article class="experience-card experience-card-photo reveal">
+            <div class="experience-visual experience-ice" role="img" aria-label="Begeleid ijsbad in een houten bad in de natuur"></div>
+            <span class="experience-number">07</span>
+            <div class="experience-meta"><span data-i18n="iceMeta">Circa 45 min</span><span data-i18n="guided">Begeleid</span></div>
+            <h3 data-i18n="iceTitle">Begeleid ijsbad</h3>
+            <p data-i18n="iceCopy">Een bewust ritueel met adem, kou en herstel, in een rustige setting en onder persoonlijke begeleiding.</p>
+            <div class="experience-price"><strong>â‚¬ 75 / â‚¬ 130</strong><span data-i18n="personDuoPrice">per persoon / duo</span></div>
+            <button type="button" data-book-experience="ice"><span data-i18n="chooseSession">Kies deze sessie</span><span>â†’</span></button>
+          </article>
+        </div>
+        <div class="package-pricing reveal">
+          <div class="package-heading">
+            <p class="eyebrow" data-i18n="packagesEyebrow">Avena experience packages</p>
+            <h3 data-i18n="packagesTitle">Meer rust, als Ã©Ã©n geheel.</h3>
+            <p data-i18n="packagesIntro">Drie samengestelde pakketten voor twee gasten. De pakketprijzen zijn indicatief en worden bij de definitieve boeking bevestigd.</p>
+          </div>
+          <div class="package-grid">
+            <article class="package-card">
+              <span>01</span><h4 data-i18n="stillnessPackage">Stillness Duo</h4>
+              <p data-i18n="stillnessIncludes">Mindfulnesstraining + klankschalensessie voor twee</p>
+              <div><strong>â‚¬ 225</strong><small data-i18n="save29">je bespaart â‚¬ 29</small></div>
+              <button type="button" data-book-experience="stillness-package"><span data-i18n="choosePackage">Kies pakket</span><span>â†’</span></button>
+            </article>
+            <article class="package-card featured">
+              <span>02</span><h4 data-i18n="waterPackage">Water &amp; Balance</h4>
+              <p data-i18n="waterIncludes">PrivÃ©vaartocht + SUP-yoga voor twee</p>
+              <div><strong>â‚¬ 259</strong><small data-i18n="save21">je bespaart â‚¬ 21</small></div>
+              <button type="button" data-book-experience="water-package"><span data-i18n="choosePackage">Kies pakket</span><span>â†’</span></button>
+            </article>
+            <article class="package-card">
+              <span>03</span><h4 data-i18n="deepPackage">Deep Reset</h4>
+              <p data-i18n="deepIncludes">Massage 90 min + boswandeling + ijsbad voor twee</p>
+              <div><strong>â‚¬ 319</strong><small data-i18n="save26">je bespaart â‚¬ 26</small></div>
+              <button type="button" data-book-experience="deep-package"><span data-i18n="choosePackage">Kies pakket</span><span>â†’</span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop" id="shop">
+        <div class="shop-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="shopEyebrow">Avena rituals</p>
+            <h2 data-i18n-html="shopTitle">Neem de rust<br><em>mee naar huis.</em></h2>
+          </div>
+          <div>
+            <p data-i18n="shopIntro">Een kleine collectie wellnessproducten, gemaakt voor langzame ochtenden en rustige avonden.</p>
+            <span class="test-label" data-i18n="testShop">Testshop Â· betalen is nog niet actief</span>
+          </div>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-image product-1"></div>
+            <div class="product-meta"><span data-i18n="bathType">Badritueel Â· 500 g</span><span>â‚¬ 24,95</span></div>
+            <h3 data-i18n="bathName">Stillness Bath Salts</h3>
+            <p data-i18n="bathCopy">Mineraalrijk badzout met een zachte, aardse geur.</p>
+            <button type="button" data-add-product="bath"><span data-i18n="addBag">In winkelmand</span><span>+</span></button>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image product-2"></div>
+            <div class="product-meta"><span data-i18n="candleType">Geurkaars Â· 220 g</span><span>â‚¬ 34,95</span></div>
+            <h3 data-i18n="candleName">Quiet Morning Candle</h3>
+            <p data-i18n="candleCopy">Een warme, verstilde geur in handgemaakt keramiek.</p>
+            <button type="button" data-add-product="candle"><span data-i18n="addBag">In winkelmand</span><span>+</span></button>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image product-3"></div>
+            <div class="product-meta"><span data-i18n="oilType">Lichaamsolie Â· 200 ml</span><span>â‚¬ 29,95</span></div>
+            <h3 data-i18n="oilName">Slow Body Oil</h3>
+            <p data-i18n="oilCopy">Voedende olie voor een eenvoudig dagelijks ritueel.</p>
+            <button type="button" data-add-product="oil"><span data-i18n="addBag">In winkelmand</span><span>+</span></button>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image product-4"></div>
+            <div class="product-meta"><span data-i18n="mistType">Linnenmist Â· 100 ml</span><span>â‚¬ 22,95</span></div>
+            <h3 data-i18n="mistName">Rest Linen Mist</h3>
+            <p data-i18n="mistCopy">Een lichte mist voor bedlinnen en stille ruimtes.</p>
+            <button type="button" data-add-product="mist"><span data-i18n="addBag">In winkelmand</span><span>+</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" id="vragen">
+        <div>
+          <p class="eyebrow" data-i18n="faqEyebrow">Goed om te weten</p>
+          <h2 data-i18n-html="faqTitle">Kleine vragen,<br><em>heldere antwoorden.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details open=""><summary data-i18n-html="faq1q">Hoe lang kan ik verblijven?<span>+</span></summary><p data-i18n="faq1a">Je boekt Avena Living voor minimaal 2 en maximaal 7 nachten.</p></details>
+          <details><summary data-i18n-html="faq2q">Voor hoeveel gasten is het verblijf?<span>+</span></summary><p data-i18n="faq2a">De suite is ingericht voor Ã©Ã©n of twee volwassen gasten.</p></details>
+          <details><summary data-i18n-html="faq3q">Kan ik direct online boeken?<span>+</span></summary><p data-i18n="faq3a">Ja. Kies je aankomst- en vertrekdatum om de beschikbaarheid te bekijken en je verblijf te reserveren.</p></details>
+          <details><summary data-i18n-html="faq4q">Is Avena Living geschikt voor zakelijk verblijf?<span>+</span></summary><p data-i18n="faq4a">Zeker. De rustige ligging en nabijheid van Schiphol en Amsterdam maken het verblijf ideaal voor short stay.</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">Avena Living Â· Aalsmeer</p>
+        <h2 data-i18n-html="finalTitle">Jouw rust begint<br><em>met een datum.</em></h2>
+        <a href="#boeken"><span data-i18n="availability">Bekijk beschikbaarheid</span> <span>â†’</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer-wordmark" href="#top">Avena Living<span>Amsterdam Â· Aalsmeer</span></a>
+      <p data-i18n="footerTag">Luxe short stay in Aalsmeer</p>
+      <div><a href="mailto:hello@avenaliving.com">hello@avenaliving.com</a><a href="https://lombok.avenaliving.com">Avena Lombok</a><a href="#">Instagram</a></div>
+      <small data-i18n="copyright">Â© 2026 Avena Living Â· Conceptwebsite</small>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="cart-head"><div><p class="eyebrow" data-i18n="yourBag">Jouw winkelmand</p><h2 data-i18n="ritualsHome">Rituelen voor thuis</h2></div><button type="button" id="cart-close" aria-label="Sluiten">Ã—</button></div>
+      <div class="cart-items" id="cart-items"><p class="cart-empty">Je winkelmand is nog leeg.</p></div>
+      <div class="cart-footer">
+        <div><span data-i18n="subtotal">Subtotaal</span><strong id="cart-total">â‚¬&nbsp;0,00</strong></div>
+        <button type="button" id="checkout-button" data-i18n="checkout" disabled="">Naar test-checkout</button>
+        <small data-i18n="shippingNote">Verzendkosten worden later berekend. Betalen is in deze testomgeving uitgeschakeld.</small>
+      </div>
+    </aside>
+
+    <dialog id="checkout-dialog">
+      <button class="dialog-close" type="button" aria-label="Sluiten">Ã—</button>
+      <p class="eyebrow" data-i18n="testCheckout">Test-checkout</p>
+      <h2 data-i18n="almostYours">Bijna van jou.</h2>
+      <p data-i18n="checkoutCopy">De winkelmand werkt. Voor echte bestellingen koppelen we hierna Mollie, Stripe of een ander betaalsysteem.</p>
+      <button class="dialog-primary" type="button" id="checkout-done" data-i18n="continueShopping">Verder winkelen</button>
+    </dialog>
+
+    <dialog id="experience-dialog" class="experience-dialog">
+      <button class="dialog-close" type="button" id="experience-close" aria-label="Sluiten">Ã—</button>
+      <p class="eyebrow" data-i18n="activityBookingEyebrow">Plan een lokaal ritueel</p>
+      <h2 id="experience-title">PrivÃ©massage</h2>
+      <p class="experience-dialog-price" id="experience-dialog-price">â‚¬ 95 / â‚¬ 135</p>
+      <form class="experience-form" id="experience-form">
+        <input type="hidden" id="experience-id" value="massage">
+        <label>
+          <span data-i18n="preferredDate">Gewenste datum</span>
+          <input id="experience-date" type="date" required="" min="2026-07-17">
+        </label>
+        <label>
+          <span data-i18n="participants">Deelnemers</span>
+          <select id="experience-participants">
+            <option value="1" data-i18n="oneParticipant">1 deelnemer</option>
+            <option value="2" selected="" data-i18n="twoParticipants">2 deelnemers</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="preferredTime">Voorkeursmoment</span>
+          <select id="experience-time">
+            <option value="morning" data-i18n="morning">Ochtend</option>
+            <option value="afternoon" data-i18n="afternoon">Middag</option>
+            <option value="evening" data-i18n="evening">Avond</option>
+          </select>
+        </label>
+        <button type="submit"><span data-i18n="requestBooking">Vraag boeking aan</span><span>â†’</span></button>
+      </form>
+      <p class="experience-message" id="experience-message" role="status" data-i18n="activityBookingNote">Je aanvraag wordt in deze testomgeving nog niet verzonden of betaald.</p>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1cc2ee28ecaf18a',t:'MTc4NDMyMjA5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
+
+</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
